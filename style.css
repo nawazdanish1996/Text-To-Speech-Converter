@@ -79,4 +79,15 @@ form button{
     background: #2c3e50;
     color: white;
     cursor: pointer;
+    font: 17px;
+}
+
+.slink{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.slink i{
+    font-size: 25px;
+    margin: 7px;
 }
