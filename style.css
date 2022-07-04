@@ -27,8 +27,6 @@ body{
     font-size: 28px;
     font-weight: 600;
     user-select: none;
-    /* text-decoration: underline solid gray 2px;
-    text-underline-offset: 5px; */
 }
 
 .wrapper form{
@@ -43,6 +41,7 @@ form .row{
 form .row label{
     font-size: 18px;
     margin-bottom: 7px;
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -67,4 +66,17 @@ form .row .outer{
     border-radius: 5px;
     display: flex;
     text-align: center;
+    padding: 0 10px;
+}
+
+form .row select{
+    font-size: 14px;
+}
+
+form button{
+    margin-top: 10px;
+    height: 40px;
+    background: #2c3e50;
+    color: white;
+    cursor: pointer;
 }
