@@ -13,9 +13,22 @@
 
         <form action="#">
             <div class="row">
-                <label for="">Enter Text Below</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <label for="text">Enter Text Below</label>
+                <textarea name="" id="text" cols="30" rows="10"></textarea>
             </div>
+            <div class="row">
+                <label for="select">Select Voice</label>
+                <div class="outer">
+                    <select name="select" id="select">
+                        <option value="">Google हिन्दी (hi-IN)</option>
+                        <option value="">Google Deutsch (de-DE)</option>
+                        <option value="">Google US English (en-US)</option>
+                        <option value="">Google UK English Male (en-GB)</option>
+                        <option value="">Google UK English Female (en-GB)</option>
+                    </select>
+                </div>
+            </div>
+            <button>Convert To Speech</button>
         </form>
     </div>
     

@@ -8,5 +8,63 @@
 }
 
 body{
-    background: #ac1c98;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #34495e;
+}
+
+.wrapper{
+    background-color: white;
+    width: 370px;
+    border-radius: 7px;
+    padding: 25px 30px;
+}
+
+.wrapper header{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    user-select: none;
+    /* text-decoration: underline solid gray 2px;
+    text-underline-offset: 5px; */
+}
+
+.wrapper form{
+    margin: 35px 0 20px;
+}
+
+form .row{
+    display: flex;
+    flex-direction: column;
+}
+
+form .row label{
+    font-size: 18px;
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+form :where(textarea, select, button){
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+}
+
+form .row textarea{
+    border: 1px solid #999;
+    resize: none;
+    height: 110px;
+    font-size: 15px;
+    padding: 8px 10px;
+}
+
+form .row .outer{
+    height: 30px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
 }
