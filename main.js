@@ -4,6 +4,7 @@ speechBtn = document.querySelector('button');
 
 let synth = speechSynthesis;
 isSpeaking = true;
+voices();
 
 function voices(){
     for(let voice of synth.getVoices()){
@@ -47,6 +48,19 @@ speechBtn.addEventListener("click", e =>{
                 isSpeaking = true;
                 speechBtn.innerText = "Resume Speech";
             }
-        }
+            
+            // checking is utternance/speech is speaking process or not in every 100 ms.
+            // if not then set the value of isSpeaking to true and change the button text.
+            setInterval(() =>{
+                if(!synth.speaking && !isSpeaking){
+                    isSpeaking = true;
+                    speechBtn.innerText = "Convert To Speech";
+                }
+            });
+            
+        }else{
+            speechBtn.innerText = "Convert To Speech";
+        };
+
     }
 });
